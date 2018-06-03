@@ -41,25 +41,25 @@ iiiii rrmmm mmmmm mmmmm
 
 iiiii xxxxx xxxxx xxxrr
 
-##### Jump (goto) command w/ conditionals:
+#### Jump (goto) command w/ conditionals:
 
 5 bits instruction, 2 bits register, 13 bits jump in memory address:
 
 iiiii rrmmm mmmmm mmmmm
 
-##### Arithmetic:
+#### Arithmetic:
 
 5 bits instruction, 2 bits register A, 2 bits register B, 2 bits register C
 
 iiiii rrrrr rxxxx xxxxx
 
-##### io Memory:
+#### io Memory:
 
 5 bits instruction, 2 bits register, 13 bits memory address
 
 iiiii rrmmm mmmmm mmmmm
 
-##### Constant Assignment:
+#### Constant Assignment:
 
 5 bits instruction, 2 bits register, 13 bits constant
 iiiii rrmmm mmmmm mmmmm
