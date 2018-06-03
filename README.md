@@ -5,48 +5,67 @@ Kougan Anki (鋼金暗器) Theoretical Assember
 Kougan Anki is a 20bit fixed-length assembler for a simple conceptual robot 
 with a theoretical Turing-complete instruction set.
 
-#Machine code syntax:
-00000 00000 00000 00000 - 20 bit per line, grouped by 5 bits.
+## Machine code syntax:
 
-Legend:
+20 bit per line, grouped by 5 bits.
+
+00000 00000 00000 00000
+
+### Legend:
+
 i - bit for instruction code
+
 r - bit for register
+
 m - bit for memory location
+
 x - ignored
 
 Depending on the instruction code, machine code syntax can vary as follows:
 
-Robot-navigation instructions:
+#### Robot-navigation instructions:
+
 5 bits instruction
+
 iiiii xxxxx xxxxx xxxxx
 
-Sensory instruction:
+#### Sensory instruction:
+
 5 bits instruction, 2 bits register, 13 bits memory
+
 iiiii rrmmm mmmmm mmmmm
 
-Jump (goto) command:
+#### Jump (goto) command:
+
 5 bits instruction, 13 bits ignored, 2 bits register:
+
 iiiii xxxxx xxxxx xxxrr
 
-Jump (goto) command w/ conditionals:
+##### Jump (goto) command w/ conditionals:
+
 5 bits instruction, 2 bits register, 13 bits jump in memory address:
+
 iiiii rrmmm mmmmm mmmmm
 
-Arithmetic:
+##### Arithmetic:
+
 5 bits instruction, 2 bits register A, 2 bits register B, 2 bits register C
+
 iiiii rrrrr rxxxx xxxxx
 
-io Memory:
+##### io Memory:
+
 5 bits instruction, 2 bits register, 13 bits memory address
+
 iiiii rrmmm mmmmm mmmmm
 
-Constant Assignment:
+##### Constant Assignment:
+
 5 bits instruction, 2 bits register, 13 bits constant
+iiiii rrmmm mmmmm mmmmm
 
 ## Instruction Codes 
 by Prof. Solomon See (DLSU, CCS)
-under Theory of PL course.
-
 
 0: halt = forces the system to stop
 
