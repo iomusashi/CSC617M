@@ -1,8 +1,6 @@
-# dlsu-kogananki-assembler
+# Assembler
 
-Kougan Anki (鋼金暗器) Theoretical Assember
-
-Kougan Anki is a 20bit fixed-length assembler for a simple conceptual robot 
+20bit fixed-length assembler for a simple conceptual robot 
 with a theoretical Turing-complete instruction set.
 
 ## Machine code syntax:
